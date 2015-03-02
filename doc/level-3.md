@@ -13,8 +13,6 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 
 
 ## Setup: ##
-**At this point, it is going to be assumed that you are comfortable with programming in java. If you are not comfortable, see the [level two](level-2.md) handbook.**
-
 The first thing we need to take care of is the setup of our environment. Luckily for us, FIRST posts a step by step guide for this each year.
 
 (You will want to make sure that you follow these instructions while on a deployment platform such as a Classmate or other laptop.)
