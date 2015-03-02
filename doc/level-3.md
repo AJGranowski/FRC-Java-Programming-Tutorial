@@ -28,6 +28,6 @@ This should bring you to the 2016 FRC Control System page. Note that this guide 
 If you are concerned with this year’s robot setup, you should read through *Getting Started With the 2016 Control System*, if not, we can simply jump to setting up the environment.
 
 1.	Click on the hyperlink that suggests setting up Java. For 2015 this was [FRC Java Programming](http://wpilib.screenstepslive.com/s/4485/m/13809)
-2.	Follow all of the steps under Setting up the Development Environment from top to bottom. *This is important as we skipped a bunch of this and ended up a little behind in 2015.*
+2.	Follow all of the steps under Setting up the Development Environment from top to bottom. *(This is important as we skipped a bunch of this and ended up a little behind in 2015.)*
 
 After following all of the instructions, you should now have either a configured Netbeans or Eclipse IDE installed on the deployment platform as well as an imaged robot.
