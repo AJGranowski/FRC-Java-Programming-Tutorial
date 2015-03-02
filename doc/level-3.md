@@ -48,7 +48,7 @@ What we need to do, is setup Git.
 
 Once Git is installed on your deployment platform, have all of the programming members who would like to participate create a GitHub account.
 
-To create an account, simply head to [github.com](https://github.com/) and make one.
+* To create an account, simply head to [github.com](https://github.com/) and make one.
 
 After people have created GitHub accounts, have them navigate to [try.github.io](https://try.github.io/levels/1/challenges/1) to practice or get a refresher of the bash terminal and Git.
 
