@@ -61,7 +61,7 @@ Now it’s time to create a repository.
 1.	Create a new repo in GitHub on the main page. Name it something identifiable like [FRCRobotCode2015](https://github.com/owatonnarobotics/2015RobotCode)
 2.	On the repo page, copy the *`HTTPS clone URL`* text on the lower right
 3.	Open up bash and navigate to the directory you want to work in. Use `cd ..` to go up a level, and `cd <directory>` to navigate to a directory.
-4.	In bash, type `git clone` and then press the `Insert key` to paste the location of the repository, the end text should look like `git clone https://github.com/owatonnarobotics/2015RobotCode.git`
+4.	In bash, type `git clone` and then press the **Insert** key to paste the location of the repository. The end text should look like this: `git clone https://github.com/owatonnarobotics/2015RobotCode.git`
 5.	Press enter to clone the online repo into your deployment machine.
 6.	If you did not include a `.gitignore` in creating your online repo, you will need to create it
 a.	In bash, run the command `touch .gitignore` while in the main part of your local repository. This should create an empty `.gitignore` file
