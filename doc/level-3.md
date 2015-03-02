@@ -54,7 +54,7 @@ After people have created GitHub accounts, have them navigate to [try.github.io]
 
 Now it’s time to create a repository.
 
-#### Creating a Git repo ####
+#### Creating a Git repo: ####
 1.	Create a new repo in GitHub on the main page. Name it something identifiable like [FRCRobotCode2015](https://github.com/owatonnarobotics/2015RobotCode)
 2.	On the repo page, copy the *"HTTPS clone URL"* text on the lower right
 3.	Open up bash and navigate to the directory you want to work in. Use cd .. to go up a level, and cd <directory name> to navigate to a directory.
