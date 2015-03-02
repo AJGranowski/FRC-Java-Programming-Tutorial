@@ -38,7 +38,9 @@ After following all of the instructions, you should now have either a configured
 
 
 # Git: #
-Now that we can program and deploy code to our robot, why aren’t we? The answer to that, is because we don’t have a reliable revision repository setup. Yeah, we could just program and deploy directly to the robot, but this prevents collaboration and makes the possibility of terrible mistakes something other than fantasy.
+> Now that we can program and deploy code to our robot, why aren’t we?
+
+The answer to that, is because we don’t have a reliable revision repository setup. Yeah, we could just program and deploy directly to the robot, but this prevents collaboration and makes the possibility of terrible mistakes something other than fantasy.
 
 What we need to do, is setup Git.
 
