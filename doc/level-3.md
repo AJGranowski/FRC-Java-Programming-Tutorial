@@ -42,6 +42,8 @@ Now that we can program and deploy code to our robot, why aren’t we? The answe
 
 What we need to do, is setup Git.
 
+#### Setting up Git: ####
+
 1.	Check to see if you already have Git installed. Look for a desktop icon that looks like this: ![](http://git-scm.com/images/logos/downloads/Git-Icon-1788C.png) If you have it, ignore the next step.
 2.	If you are on a Windows machine, head to [msysgit.github.io](http://msysgit.github.io/) to download Git.
 3.	While you are downloading and installing, [read about Git here](http://git-scm.com/about).
