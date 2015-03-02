@@ -64,5 +64,5 @@ Now it’s time to create a repository.
 4.	In bash, type `git clone` and then press the **Insert** key to paste the location of the repository. The end text should look like this: `git clone https://github.com/owatonnarobotics/2015RobotCode.git`
 5.	Press enter to clone the online repo into your deployment machine.
 6.	If you did not include a `.gitignore` in creating your online repo, you will need to create it
-a.	In bash, run the command `touch .gitignore` while in the main part of your local repository. This should create an empty `.gitignore` file
+  * In bash, run the command `touch .gitignore` while in the main part of your local repository. This should create an empty `.gitignore` file
 7.	Head to [github.com/owatonnarobotics/2015RobotCode/blob/master/.gitignore](https://github.com/owatonnarobotics/2015RobotCode/blob/master/.gitignore) and copy the text into your `.gitignore` file. *(The `.gitignore` basically tells Git to never commit the listed files which is good for keeping the repo clean.)*
