@@ -12,14 +12,14 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 
 
 
-## Setup: ##
+# Setup: #
 *Note: This guide has been written during 2015, so some of the steps outlined might differ from what you see.*
 
 The first thing we need to take care of is the setup of our environment. Luckily for us, FIRST posts a step by step guide for this each year.
 
 (You will want to make sure that you follow these instructions while on a deployment platform such as a Classmate or other laptop.)
 
-#### To access the guide, follow these steps: ####
+##### To access the guide, follow these steps: #####
 
 1.	Navigate to www.usfirst.org/roboticsprograms/frc
 2.	Locate “Technical Resources” in the left sidebar
@@ -29,7 +29,7 @@ This should bring you to the 2016 FRC Control System page.
 
 If you are concerned with this year’s robot setup, you should read through *Getting Started With the 2016 Control System*, if not, we can simply jump to setting up the environment.
 
-#### Following instructions: ####
+##### Following instructions: #####
 1.	Click on the hyperlink that suggests setting up Java. For 2015 this was [FRC Java Programming](http://wpilib.screenstepslive.com/s/4485/m/13809)
 2.	Follow all of the steps under Setting up the Development Environment from top to bottom. *(This is important as we skipped a bunch of this and ended up a little behind in 2015.)*
 
@@ -37,7 +37,7 @@ After following all of the instructions, you should now have either a configured
 
 
 
-## Git: ##
+# Git: #
 Now that we can program and deploy code to our robot, why aren’t we? The answer to that, is because we don’t have a reliable revision repository setup. Yeah, we could just program and deploy directly to the robot, but this prevents collaboration and makes the possibility of terrible mistakes something other than fantasy.
 
 What we need to do, is setup Git.
@@ -54,7 +54,8 @@ After people have created GitHub accounts, have them navigate to [try.github.io]
 
 Now it’s time to create a repository.
 
-#### Creating a Git repo: ####
+##### Creating a Git repo: #####
+
 1.	Create a new repo in GitHub on the main page. Name it something identifiable like [FRCRobotCode2015](https://github.com/owatonnarobotics/2015RobotCode)
 2.	On the repo page, copy the *"HTTPS clone URL"* text on the lower right
 3.	Open up bash and navigate to the directory you want to work in. Use `cd ..` to go up a level, and `cd <directory>` to navigate to a directory.
