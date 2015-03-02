@@ -13,6 +13,8 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 
 
 ## Setup: ##
+*Note: This guide has been written during 2015, so some of the steps outlined might differ from what you see.*
+
 The first thing we need to take care of is the setup of our environment. Luckily for us, FIRST posts a step by step guide for this each year.
 
 (You will want to make sure that you follow these instructions while on a deployment platform such as a Classmate or other laptop.)
@@ -23,7 +25,7 @@ The first thing we need to take care of is the setup of our environment. Luckily
 2.	Locate “Technical Resources” in the left sidebar
 3.	Hover over the button, and select “Programming” when a sub menu pops out
 
-This should bring you to the 2016 FRC Control System page. Note that this guide has been written during 2015, so some of the steps outlined might differ from what you see.
+This should bring you to the 2016 FRC Control System page.
 
 If you are concerned with this year’s robot setup, you should read through *Getting Started With the 2016 Control System*, if not, we can simply jump to setting up the environment.
 
