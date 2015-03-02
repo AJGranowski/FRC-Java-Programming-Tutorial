@@ -6,11 +6,11 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 
 ====
 
-Table of Contents
+##### Table of Contents: #####
 * [Setup](#setup)
 * [Git](#git)
 
-====
+
 
 ## Setup: ##
 **At this point, it is going to be assumed that you are comfortable with programming in java. If you are not comfortable, see the [level two](level-2.md) handbook.**
