@@ -84,9 +84,9 @@ Now we can manage our project with Git. This would be wonderful news if we all k
 4. Pull from the remote repository to make sure you are up to date
 5. Push to the remote repository
 
-It gets a little more complicated than that when working on other peoples projects, but that will all be covered in this section.
+It gets a little more complicated when when working on other peoples projects, but that should all be covered within this section.
 
-##### Standard workflow: #####
+#### Standard workflow: ####
 1. `git pull <remote-name>`
 2. *Work on changes*
 3. `git add --all` OR `git add <file-name>`
@@ -94,7 +94,7 @@ It gets a little more complicated than that when working on other peoples projec
 5. *At the end of a coding session*
 6. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
 
-##### Standard workflow with merge: #####
+#### Standard workflow with merge: ####
 1. `git pull <remote-name>`
 2. *Message about "Automatic merge failed"*
 3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish` is what the remote has.
