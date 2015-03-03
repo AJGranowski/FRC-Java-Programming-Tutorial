@@ -9,6 +9,7 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 ##### Table of Contents: #####
 * [Setup](#setup)
 * [Git](#git)
+* [Using Git](#using-git)
 
 
 
@@ -68,3 +69,39 @@ Now it’s time to create a repository.
 6.	If you did not include a `.gitignore` in creating your online repo, you will need to create it
   * In bash, run the command `touch .gitignore` while in the main part of your local repository. This should create an empty `.gitignore` file
 7.	Head to [github.com/owatonnarobotics/2015RobotCode/blob/master/.gitignore](https://github.com/owatonnarobotics/2015RobotCode/blob/master/.gitignore) and copy the text into your `.gitignore` file. *(The `.gitignore` basically tells Git to never commit the listed files which is good for keeping the repo clean.)*
+
+Great! We now have a repository setup!
+
+
+
+# Using Git: #
+Now we can manage our project with Git. This would be wonderful news if we all knew how to take advantage of it, but some of my readers might not. This section is here to focus on how to perform the operations you should expect to have to do at one point or another.
+
+##### The usual workflow of Git is as follows: #####
+1. Pull from a remote repository
+2. Work on the project
+3. Stage and commit changed files
+4. Pull from the remote repository to make sure you are up to date
+5. Push to the remote repository
+
+It gets a little more complicated than that when working on other peoples projects, but that will all be covered in this section.
+
+##### Standard workflow: #####
+1. `git pull <remote-name>`
+2. *Work on changes*
+3. `git add --all` OR `git add <file-name>`
+4. `git commit -m "<what-you-changed>"`
+5. *At the end of a coding session*
+6. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
+
+##### Standard workflow with merge: #####
+1. `git pull <remote-name>`
+2. *Message about "Automatic merge failed"*
+3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish` is what the remote has.
+4. `git add --all` OR `git add <file-name>`
+5. `git commit -m "Merge resolution: Merged <remote-name> into local"`
+6. *Work on changes*
+7. `git add --all` OR `git add <file-name>`
+8. `git commit -m "<what-you-changed>"`
+9. *At the end of a coding session*
+10. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
