@@ -1,5 +1,5 @@
 # FRC Java Programming Tutorial (WIP) #
-##### Programming effectively for FRC competitions in Java #####
+##### *Programming effectively for FRC competitions in Java* #####
 ****
 
 Welcome!
