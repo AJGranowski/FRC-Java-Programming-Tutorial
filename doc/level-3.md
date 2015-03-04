@@ -110,7 +110,7 @@ You use branches to split up the project into logical chunks to be merged later 
 
 I would recommend one branch for working code (`master`), one branch for developing the next version (`dev`), and one branch for every major part of a project.
 
-#### Working on someone elses project: ####
+#### Working on someone else’s project: ####
 1. `git push --prune --all <your-remote>`
 2. Login to [github.com](https://github.com/)
 3. Head to the repo you would like to push your changes to
