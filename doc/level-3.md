@@ -84,7 +84,7 @@ Now we can manage our project with Git. This would be wonderful news if we all k
 4. Pull from the remote repository to make sure you are up to date
 5. Push to the remote repository
 
-It gets a little more complicated when when working on other peoples projects, but that should all be covered within this section.
+It gets a little more complicated when working on other peoples projects, but that should all be covered within this section.
 
 #### Standard workflow: ####
 1. `git pull <remote-name>`
@@ -92,16 +92,24 @@ It gets a little more complicated when when working on other peoples projects, b
 3. `git add --all` OR `git add <file-name>`
 4. `git commit -m "<what-you-changed>"`
 5. *At the end of a coding session*
-6. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
+6. `git pull <remote-name>` (To make sure that you are up to date)
+7. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
 
-#### Standard workflow with merge: ####
-1. `git pull <remote-name>`
-2. *Message about "Automatic merge failed"*
-3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish` is what the remote has.
-4. `git add --all` OR `git add <file-name>`
-5. `git commit -m "Merge resolution: Merged <remote-name> into local"`
-6. *Work on changes*
-7. `git add --all` OR `git add <file-name>`
-8. `git commit -m "<what-you-changed>"`
-9. *At the end of a coding session*
-10. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
+#### Merging: ####
+1. *Message about "Automatic merge failed"*
+2. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish` is what the remote has.
+3. `git add --all` OR `git add <file-name>`
+4. `git commit -m "Merge resolution: Merged <remote-name> into local"`
+
+#### Working on someone elses project: ####
+1. `git push --prune --all <your-remote>`
+2. Login to [github.com](https://github.com/)
+3. Head to the repo you would like to push your changes to
+4. Click on *"Pull Requests"* on the right side
+5. Submit a pull request
+  * `base` is where the code is going
+  * `head` is where the code is coming from
+
+
+
+
