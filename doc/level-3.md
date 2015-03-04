@@ -90,7 +90,7 @@ For example: `git push --help` will open up the local documentation of the push 
 
 It gets a little more complicated when working on other peoples projects, but that should all be covered within this section.
 
-#### Standard workflow: ####
+### Standard workflow: ###
 1. `git pull <remote-name>`
 2. *Work on changes*
 3. `git add --all` OR `git add <file-name>`
@@ -99,9 +99,10 @@ It gets a little more complicated when working on other peoples projects, but th
 6. `git pull <remote-name>` (To make sure that you are up to date)
 7. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
 
-#### Using Branches: ####
+### Using Branches: ###
 You use branches to split up the project into logical chunks to be merged later on.
 ![](http://git-scm.com/images/about/branches@2x.png)
+
 1. Make a branch with either `git branch <name>` or `git checkout -b <name>`
 2. View branches with `git branch`
 3. Checkout a branch with `checkout <branch-name>`
@@ -110,7 +111,7 @@ You use branches to split up the project into logical chunks to be merged later 
 
 I would recommend one branch for working code (`master`), one branch for developing the next version (`dev`), and one branch for every major part of a project.
 
-#### Working on someone else’s project: ####
+### Working on someone else’s project: ###
 1. `git push --prune --all <your-remote>`
 2. Login to [github.com](https://github.com/)
 3. Head to the repo you would like to push your changes to
@@ -120,7 +121,7 @@ I would recommend one branch for working code (`master`), one branch for develop
   * `head` is where the code is coming from
 
 
-#### Merging: ####
+### Merging: ###
 1. `git pull` or `git merge`
 2. *Message about "Automatic merge failed"*
 3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish*` is what the remote has.
