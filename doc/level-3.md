@@ -97,7 +97,7 @@ It gets a little more complicated when working on other peoples projects, but th
 
 #### Merging: ####
 1. *Message about "Automatic merge failed"*
-2. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish` is what the remote has.
+2. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish*` is what the remote has.
 3. `git add --all` OR `git add <file-name>`
 4. `git commit -m "Merge resolution: Merged <remote-name> into local"`
 
