@@ -45,6 +45,8 @@ The answer to that, is because we don’t have a reliable revision repository se
 
 What we need to do, is setup Git.
 
+([What?](http://hoth.entp.com/output/git_for_designers.html))
+
 #### Setting up Git: ####
 
 1.	Check to see if you already have Git installed. Look for a desktop icon that looks like this: ![](http://git-scm.com/images/logos/downloads/Git-Icon-1788C.png) If you have it, ignore the next step.
@@ -56,6 +58,9 @@ Once Git is installed on your deployment platform, have all of the programming m
 * To create an account, simply head to [github.com](https://github.com/) and make one.
 
 After people have created GitHub accounts, have them navigate to [try.github.io](https://try.github.io/levels/1/challenges/1) to practice or get a refresher of the bash terminal and Git.
+
+You can also use these resources to help with the setup:
+* https://help.github.com/articles/set-up-git/
 
 Now it’s time to create a repository.
 
@@ -93,7 +98,7 @@ It gets a little more complicated when working on other peoples projects, but th
 ### Standard workflow: ###
 1. `git pull <remote-name>`
 2. *Work on changes*
-3. `git status` (To see what has chnaged)
+3. `git status` (To see what has changed)
 3. `git add --all` OR `git add <file-name>`
 4. `git status` (To see what will be in the commit)
 4. `git commit -m "<what-you-changed>"`
@@ -129,4 +134,3 @@ I would recommend one branch for working code (`master`), one branch for develop
 3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish*` is what the remote has.
 4. `git add --all` OR `git add <file-name>`
 5. `git commit -m "Merge resolution: Merged <remote-name> into local"`
-
