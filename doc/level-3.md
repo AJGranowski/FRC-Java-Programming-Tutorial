@@ -93,7 +93,9 @@ It gets a little more complicated when working on other peoples projects, but th
 ### Standard workflow: ###
 1. `git pull <remote-name>`
 2. *Work on changes*
+3. `git status` (To see what has chnaged)
 3. `git add --all` OR `git add <file-name>`
+4. `git status` (To see what will be in the commit)
 4. `git commit -m "<what-you-changed>"`
 5. *At the end of a coding session*
 6. `git pull <remote-name>` (To make sure that you are up to date)
