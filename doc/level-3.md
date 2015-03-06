@@ -161,9 +161,9 @@ There are going to be three files that came with the project.
 ### OI.java ###
 This is the **O**perator **I**nput file. This is where all of the buttons and stuff will be created.
 
-If you are using an Xbox 360 controller, you might want to include [this](https://github.com/owatonnarobotics/XboxController) file to make things easier.
+The code in the OI.java file is usually something like `<Button>.whenPressed( new MyCommandToDoStuff() );`
 
-The process of this file is usually something like `<Button>.whenPressed( new MyCommandToDoStuff() );`
+If you are using an Xbox 360 controller, you might want to include [this](https://github.com/owatonnarobotics/XboxController) file to make things easier.
 
 
 ## Robot.java ##
@@ -172,6 +172,7 @@ This is where all of the magic happens.
 Usually in java, the start of everything is in a main method, but not in this case. If you take a peek into the `Robot.java` file, you will find that there are already some methods included in it. Here's what each method does:
 
 * `robotInit()` - Called once when the robot is started up.
+* `disabledInit()` - Called once when the robot enters a disabled mode. *NOTE: This is called when the robot has finished starting up.*
 * `disabledPeriodic()` - Called about every 20ms while the robot is disabled.
 * `autonomousInit()` - Called once when the robot enters autonomous mode.
 * `autonomousPeriodic()` - Called about every 20ms while the robot is in autonomous.
@@ -179,7 +180,7 @@ Usually in java, the start of everything is in a main method, but not in this ca
 * `teleopPeriodic()` - Called about every 20ms while the robot is in teleop.
 * `testPeriodic()` - I don't know. I've never used it.
 
-There is also a weird method that gets called named `Scheduler.getInstance().run()`. This method calls other stuff in the background so you don’t have to. It checks the buttons when called and executed the tied commands if they are pressed, and it managed the execution of the commands. You can find more about it [here](http://first.wpi.edu/FRC/roborio/release/docs/java/classedu_1_1wpi_1_1first_1_1wpilibj_1_1command_1_1Scheduler.html#details) (also found somewhere on the 2016 FRC Control System page)
+There is also a weird method that gets called named `Scheduler.getInstance().run()`. This method calls other stuff in the background so you don’t have to. It checks the buttons when called and executes the tied commands if they are pressed. It also manages the execution of the commands. You can find more about it [here](http://first.wpi.edu/FRC/roborio/release/docs/java/classedu_1_1wpi_1_1first_1_1wpilibj_1_1command_1_1Scheduler.html#details) (also found somewhere on the 2016 FRC Control System page)
 
 
 ## RobotMap.java ##
