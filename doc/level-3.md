@@ -10,6 +10,7 @@ Congratulations! You are now ready to program the robot! Let’s dive in, shall 
 * [Setup](#setup)
 * [Git](#git)
 * [Using Git](#using-git)
+* [Programming the Robot](#programming-the-robot)
 
 
 
@@ -134,3 +135,61 @@ I would recommend one branch for working code (`master`), one branch for develop
 3. Edit the files listed to merge. `<<<<<<< HEAD` to `=======` is what you have, `=======` to `>>>>>>> *gibberish*` is what the remote has.
 4. `git add --all` OR `git add <file-name>`
 5. `git commit -m "Merge resolution: Merged <remote-name> into local"`
+
+
+# Programming the Robot: #
+Now that all of our basics are setup, we can begin to program the robot.
+
+Again, follow the steps from the 2016 FRC Control System page for creating the program. It should look something like this:
+
+1. Open eclipse
+2. Navigate to `File` > `New` > `Other...`
+3. Select `WPILib Robot Java Development`
+4. Select `Robot java Project`
+5. If prompted, select `Command Based Robot` or something of the like.
+
+Once you have a project created, it would be a good idea to open up Git to make an initial commit.
+
+## What does this do? ##
+There are going to be three files that came with the project.
+
+* `OI.java`
+* `Robot.java`
+* `RobotMap.java`
+
+
+### OI.java ###
+This is the **O**perator **I**nput file. This is where all of the buttons and stuff will be created.
+
+If you are using an Xbox 360 controller, you might want to include [this](https://github.com/owatonnarobotics/XboxController) file to make things easier.
+
+The process of this file is usually something like `<Button>.whenPressed( new MyCommandToDoStuff() );`
+
+
+## Robot.java ##
+This is where all of the magic happens.
+
+Usually in java, the start of everything is in a main method, but not in this case. If you take a peek into the `Robot.java` file, you will find that there are already some methods included in it. Here's what each method does:
+
+* `robotInit()` - Called once when the robot is started up.
+* `disabledPeriodic()` - Called about every 20ms while the robot is disabled.
+* `autonomousInit()` - Called once when the robot enters autonomous mode.
+* `autonomousPeriodic()` - Called about every 20ms while the robot is in autonomous.
+* `teleopInit()` - Called once at the end of autonomous when teleop begins.
+* `teleopPeriodic()` - Called about every 20ms while the robot is in teleop.
+* `testPeriodic()` - I don't know. I've never used it.
+
+There is also a weird method that gets called named `Scheduler.getInstance().run()`. This method calls other stuff in the background so you don’t have to. It checks the buttons when called and executed the tied commands if they are pressed, and it managed the execution of the commands. You can find more about it [here](http://first.wpi.edu/FRC/roborio/release/docs/java/classedu_1_1wpi_1_1first_1_1wpilibj_1_1command_1_1Scheduler.html#details) (also found somewhere on the 2016 FRC Control System page)
+
+
+## RobotMap.java ##
+This is a file used for global variables.
+
+What you would want to put here is any constant that you might end up changing later on. This includes:
+
+* PWM ports
+* DIO ports
+* Any other port
+* Variables for certain robot functions (max speed, flash lights, etc.)
+
+You should make them with the modifiers `public static final`
