@@ -193,3 +193,7 @@ What you would want to put here is any constant that you might end up changing l
 * Variables for certain robot functions (max speed, flash lights, etc.)
 
 You should make them with the modifiers `public static final`
+
+
+
+If you are still confused about how exactly everything works, you should feel free to look at our [2015 code](https://github.com/owatonnarobotics/2015RobotCode). It has a working autonomous and teleop modes, and also provides examples of working with WPILib and the XboxController Class.
