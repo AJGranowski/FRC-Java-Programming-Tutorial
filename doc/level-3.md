@@ -107,6 +107,8 @@ It gets a little more complicated when working on other peoples projects, but th
 6. `git pull <remote-name>` (To make sure that you are up to date)
 7. `git push --prune --all <remote-name>` *(This makes the remote repo look the same as your local repo by deleting branches you no longer have and pushing all of your existing branches to the remote)*
 
+*Note: [Using the -a or --all flag is a bad habit](http://willi.am/blog/2014/05/06/git-for-devs-who-cant-commit-good/), however, it should be fine until you all feel comfortable with Git.*
+
 ### Using Branches: ###
 You use branches to split up the project into logical chunks to be merged later on.
 ![](http://git-scm.com/images/about/branches@2x.png)
